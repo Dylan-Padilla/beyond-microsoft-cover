@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name='viewport' content='width=device-width, initial-scale=1'/>
+    <style>
+      body {
+	  background: url(imgs/grain_sand.jpg);
+	  padding: 0;
+	  margin: 0;
+      }
+      .wrapper {
+	  place-items: center;
+	  display: grid;
+	  margin-left: auto;
+	  margin-right: auto;
+      }
+      .typing-demo {
+	  width: 24ch;
+	  margin-left: auto;
+	  margin-right: auto;
+	  animation: typing 3s steps(24),
+		     blink 5s step-end infinite alternate;
+	  white-space: nowrap;
+	  overflow: hidden;
+	  border-right: 3px solid;
+	  font-family: Georgia, serif;
+	  font-size: 50px;
+      }
+      @keyframes typing {
+	  from {
+	      width: 0;
+	  }
+      }
+      @keyframes blink {
+	  50% {
+	      border-color: transparent;
+	  }
+      }
+      h1 {
+	  position: relative;
+	  top: 100px;
+	  color: #005825;
+	  font-family: Georgia, serif;
+	  text-align: center;
+	  font-style: italic;
+	  font-size: 50px;
+      }
+      h2 {
+	  position: relative;
+	  top: 100px;
+	  color: #005825;
+	  font-family: Georgia, serif;
+	  text-align: center;
+	  font-style: italic;
+	  font-size: 50px;
+      }
+      h3 {
+	  position: relative;
+	  top: 100px;
+	  color: #005825;
+	  font-family: Georgia, serif;
+	  text-align: center;
+	  font-style: italic;
+	  font-size: 20px;
+      }
+      img {
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	  opacity: 0;
+	  position: relative;
+	  top: 200px;
+	  animation: 450ms bounceIn Linear forwards;
+      }
+      img {
+	  animation-delay: 4s;
+      }
+      @keyframes bounceIn {
+	  0% {
+	      opacity: 0;
+	      transform: scale(0.3) translated3d(0, 0, 0);
+	  }
+	  50% {
+	      opacity: 0.9;
+	      transform: scale(1.1);
+	  }
+	  80% {
+	      opacity: 1;
+	      transform: scale(0.89);
+	  }
+	  100% {
+	      opacity: 1;
+	      transform: scale(1) translated3d(0, 0, 0);
+	  }
+      }
+    </style>
+  </head>
+  <body>
+    <div class='wrapper'>
+      <div class='typing-demo'>
+	<h1>The American Naturalist</h1><br>
+      </div>
+      <h2>Beyond Microsoft:<br>A Series of YouTube Shorts<br><br><br>ASN Graduate Council</h2>
+    </div>
+    <h3>Xinyi Yan, University of Texas, Austin<br>Nikunj Goel, University of Texas, Austin<br>Chris Robinson, Indiana University<br>Sarah McPeek, University of Virginia<br>Sajesh Vijayan, IISER Thiruvananthapuram<br>Dylan Padilla, Arizona State University</h3>
+    <div>
+      <img src='imgs/ASN_logo.png'/>
+      </div>
+  </body>
+</html>
