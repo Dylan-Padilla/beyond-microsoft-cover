@@ -9,27 +9,25 @@
 	  margin: 0;
       }
       .wrapper {
+	  height: 100%;
 	  place-items: center;
-	  display: grid;
-	  margin-left: 0px;
-	  margin-right: 0px;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
       }
       .typing-demo {
 	  width: 24ch;
-	  margin-left: 0px;
-	  margin-right: 0px;
 	  animation: typing 3s steps(24),
 		     blink 5s step-end infinite alternate;
 	  white-space: nowrap;
 	  overflow: hidden;
 	  border-right: 3px solid;
 	  font-family: Georgia, serif;
-	  font-size: 30px;
+	  font-size: 60px;
       }
       @keyframes typing {
 	  from {
 	      width: 0;
-	      text-align: center;
 	  }
       }
       @keyframes blink {
@@ -44,7 +42,7 @@
 	  font-family: Georgia, serif;
 	  text-align: center;
 	  font-style: italic;
-	  font-size: 50px;
+	  font-size: 60px;
       }
       h2 {
 	  position: relative;
@@ -100,7 +98,7 @@
     <div class='wrapper'>
       <div class='typing-demo'>
 	<h1>The American</h1>
-	<h1>Naturalist</h1><br><br>
+	<h1>Naturalist</h1><br>
       </div>
     </div>
     <div>
@@ -109,6 +107,6 @@
     <h3>Xinyi Yan, University of Texas, Austin<br>Nikunj Goel, University of Texas, Austin<br>Chris Robinson, Indiana University<br>Sarah McPeek, University of Virginia<br>Sajesh Vijayan, IISER Thiruvananthapuram<br>Dylan Padilla, Arizona State University</h3>
     <div>
       <img src='imgs/ASN_logo.png'/>
-      </div>
+    </div>
   </body>
 </html>
